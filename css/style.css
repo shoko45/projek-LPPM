@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 a {
   text-decoration: none;
@@ -83,3 +83,130 @@ html {
   background-color: #333;
 }
 
+.organigram {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.tentang {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.01);
+}
+
+.row.dua {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box.kecil {
+  flex: 1 1 48%;
+}
+
+.box.besar {
+  width: 100%;
+}
+
+h2,
+h3 {
+  color: #004085;
+  margin-bottom: 12px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+.struktur-img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Tambahkan ke style.css */
+
+.site-header {
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title .logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.site-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-subtitle {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00;
+}
+ 
+
+/* Responsif */
+@media (max-width: 768px) {
+  .row.dua {
+    flex-direction: column;
+  }
+  .box.kecil {
+    flex: 1 1 100%;
+  }
+}
